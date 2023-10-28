@@ -4,16 +4,6 @@ $free-palestine-background-color: #fff;
 $free-palestine-text-color: #000;
 $free-palestine-banner-height: 48px;
 
-body {
-    margin-top: 56px !important;
-
-    @media (max-width: 768px) {
-        margin-top: 32px !important;
-    }
-}
-
-
-
 #free-palestine-widget {
     * {
         font-family: 'Bebas Neue', sans-serif;
@@ -24,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     padding: 8px;
     width: 100%;
@@ -32,13 +22,14 @@ body {
     background: linear-gradient(90deg, rgba(60, 128, 79, 0.10) 0%, rgba(193, 61, 68, 0.10) 94.24%);
     box-sizing: border-box;
     overflow: hidden;
+    z-index: 2147483647; // Max. z-index value
 
     &:before {
         content: "";
         width: 215px;
         height: 56px;
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
         background: linear-gradient(to right, rgba(249, 236, 236, 0.5) 0%, #f4e6e6 5%, #f4e6e6);
         z-index: 1;
@@ -67,7 +58,7 @@ body {
 
         .logo {
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
             height: 56px;
         }
