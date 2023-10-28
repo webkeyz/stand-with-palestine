@@ -91,7 +91,7 @@ $free-palestine-banner-height: 48px;
         .stats {
             display: flex;
             align-items: center;
-            animation: scroll 15s 2s linear infinite;
+            animation: palestine-widget-scroll 15s 2s linear infinite;
 
             .item {
                 display: flex;
@@ -171,7 +171,7 @@ $free-palestine-banner-height: 48px;
 
             .stats {
                 width: 750px;
-                animation: scroll-responsive 15s 2s linear infinite;
+                animation: palestine-widget-scroll-responsive 15s 2s linear infinite;
 
                 .item {
                     display: flex;
@@ -207,7 +207,7 @@ $free-palestine-banner-height: 48px;
 
         }
 
-        @keyframes scroll-responsive {
+        @keyframes palestine-widget-scroll-responsive {
             0% {
                 transform: translateX(0);
             }
@@ -296,7 +296,7 @@ $free-palestine-banner-height: 48px;
 /**
  * Animations
  */
-@keyframes scroll {
+@keyframes palestine-widget-scroll {
     0% {
         transform: translateX(0);
     }
