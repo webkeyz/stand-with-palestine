@@ -119,7 +119,7 @@ fetch(baseAPIURL + '/stats') // Replace with your API URL
 
 			const title = document.createElement('p');
 			title.className = 'title';
-			title.textContent = stat.count + ' ' + stat.title;
+			title.textContent = stat.count + ' ' + stat.text;
 
 			info.appendChild(title);
 			item.appendChild(icon);
