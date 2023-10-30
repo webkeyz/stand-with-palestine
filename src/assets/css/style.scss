@@ -123,6 +123,25 @@ $free-palestine-banner-height: 48px;
         }
     }
 
+    .cta-mobile {
+        display: none;
+        position: absolute;
+        margin-top: -27px; // 19px banner + 8px container padding
+        left: 0;
+        width: 100%;
+        padding: 2px 42px;
+        text-align: center;
+        font-size: 12px;
+        font-family: sans-serif;
+        text-decoration: none;
+        background-color: #009639;
+        color: #FFF;
+
+        svg {
+            margin-inline-start: 8px;
+        }
+    }
+
     @media (max-width: 1280px) {
         #free-palestine-banner {
             .hero {
@@ -196,9 +215,13 @@ $free-palestine-banner-height: 48px;
 
         }
 
-        // Hide CTA
+        // Hide CTA & Show CTA Mobile
         .cta {
             display: none;
+        }
+
+        .cta-mobile {
+            display: block;
         }
 
         @keyframes palestine-widget-scroll-responsive {
