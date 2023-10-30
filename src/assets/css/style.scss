@@ -43,7 +43,7 @@ $free-palestine-banner-height: 48px;
         .hero {
             margin-inline-start: 145px;
             font-size: 28px;
-            color: #3C804F;
+            color: #009639;
 
             .mobile {
                 display: none;
@@ -58,6 +58,7 @@ $free-palestine-banner-height: 48px;
      * Stats
      */
     .stats-wrapper {
+        display: flex;
         margin-top: -2px;
         width: 45%;
         max-width: 800px;
@@ -71,6 +72,7 @@ $free-palestine-banner-height: 48px;
 
             .item {
                 display: flex;
+                align-items: center;
                 margin-inline-end: 32px;
                 color: #C13D44;
 
@@ -96,9 +98,8 @@ $free-palestine-banner-height: 48px;
      * CTA (Call-to-Action)
      */
     .cta {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        margin-top: -8px;
+        margin-right: -8px;
         display: flex;
         align-items: center;
         height: 56px;
@@ -123,30 +124,35 @@ $free-palestine-banner-height: 48px;
     }
 
     @media (max-width: 1280px) {
-        &:before {
-            width: 100px;
-        }
-
-        &:after {
-            right: 7%;
+        #free-palestine-banner {
+            .hero {
+                font-size: 18px;
+                margin-inline-start: 120px;
+            }
         }
 
         .stats-wrapper {
             display: flex;
-            width: 35%;
+            width: 32%;
+
+            .stats .item {
+                margin-inline-end: 12px;
+
+                .info {
+                    .title {
+                        font-size: 14px;
+                    }
+                }
+            } 
+        }
+
+        .cta {
+            font-size: 12px;
         }
     }
 
     @media (max-width: 768px) {
         height: 32px;
-
-        &:before {
-            display: none;
-        }
-
-        &:after {
-            display: none;
-        }
 
         #free-palestine-banner {
             .logo {
@@ -154,16 +160,8 @@ $free-palestine-banner-height: 48px;
             }
 
             .hero {
-                font-size: 16px;
+                font-size: 14px;
                 margin-inline-start: 65px;
-
-                .mobile {
-                    display: block;
-                }
-
-                .desktop {
-                    display: none;
-                }
             }
         }
 
@@ -179,8 +177,8 @@ $free-palestine-banner-height: 48px;
                     margin-inline-end: 12px;
 
                     .icon {
-                        width: 19px;
-                        height: 19px;
+                        width: 18px;
+                        height: 18px;
                         margin-top: 2px;
                     }
 
@@ -190,12 +188,17 @@ $free-palestine-banner-height: 48px;
                         margin-inline-start: 4px;
 
                         .title {
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                     }
                 }
             }
 
+        }
+
+        // Hide CTA
+        .cta {
+            display: none;
         }
 
         @keyframes palestine-widget-scroll-responsive {

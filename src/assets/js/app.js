@@ -3,6 +3,7 @@
 
 /**
  * [TEMP] Essential Icons
+ * FIXME: Implement a better way for icons
  */
 const svgSupportHand = `<svg xmlns="http://www.w3.org/2000/svg" class="hand" width="60" height="72" viewBox="0 0 60 72" fill="none">
 <g filter="url(#filter0_d_729_99)">
@@ -51,6 +52,7 @@ palestineBanner.id = 'free-palestine-banner';
 palestineBannerWrapper.appendChild(palestineBanner);
 
 // 1. Create flag element
+// FIXME: Replace with the design's flag
 const flag = document.createElement("img");
 flag.src = 'https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg';
 flag.classList.add('logo');
