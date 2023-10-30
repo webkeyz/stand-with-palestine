@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 $free-palestine-background-color: #fff;
 $free-palestine-text-color: #000;
@@ -6,7 +6,7 @@ $free-palestine-banner-height: 48px;
 
 #free-palestine-widget {
     * {
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Anton', sans-serif;
         margin: 0;
         padding: 0;
     }
@@ -21,31 +21,8 @@ $free-palestine-banner-height: 48px;
     height: 56px;
     background: #fff;
     box-sizing: border-box;
-    overflow: hidden;
+    box-shadow: 1px -10px 20px #f2f2f2;
     z-index: 2147483647; // Max. z-index value
-
-    &:before {
-        content: "";
-        width: 215px;
-        height: 56px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background: #fff;
-        z-index: 1;
-    }
-
-    &:after {
-        content: "";
-        width: 15px;
-        height: 100px;
-        background-color: #000;
-        position: absolute;
-        top: -25px;
-        right: 10%;
-        transform: rotate(-45deg);
-        z-index: 2;
-    }
 
     /**
      * Banner
@@ -64,9 +41,8 @@ $free-palestine-banner-height: 48px;
         }
 
         .hero {
-            margin-inline-start: 150px;
+            margin-inline-start: 145px;
             font-size: 28px;
-            font-weight: bold;
             color: #3C804F;
 
             .mobile {
@@ -95,29 +71,54 @@ $free-palestine-banner-height: 48px;
 
             .item {
                 display: flex;
-                margin-inline-end: 12px;
+                margin-inline-end: 32px;
                 color: #C13D44;
 
                 .icon {
-                    width: 37px;
-                    height: 37px;
+                    width: auto;
+                    height: 32px;
                 }
 
                 .info {
-                    margin-inline-start: 12px;
+                    margin-inline-start: 8px;
 
                     .title {
-                        margin-bottom: -7px; // Handle line-height difference
-                        font-size: 22px;
-                        font-weight: bold;
+                        font-size: 20px;
                         text-transform: uppercase;
-                    }
-
-                    .desc {
-                        font-size: 18px;
                     }
                 }
             }
+        }
+    }
+
+
+    /**
+     * CTA (Call-to-Action)
+     */
+    .cta {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 56px;
+        padding: 8px 16px 8px 2px;
+
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        text-decoration: none;
+
+        color: #fff;
+        background-color: #009639;
+
+        box-sizing: border-box;
+
+        .hand {
+            margin-top: -32px;
+        }
+
+        .arrow {
+            margin-inline-start: 8px;
         }
     }
 
@@ -153,7 +154,7 @@ $free-palestine-banner-height: 48px;
             }
 
             .hero {
-                font-size: 18px;
+                font-size: 16px;
                 margin-inline-start: 65px;
 
                 .mobile {
@@ -175,6 +176,7 @@ $free-palestine-banner-height: 48px;
 
                 .item {
                     display: flex;
+                    margin-inline-end: 12px;
 
                     .icon {
                         width: 19px;
@@ -185,21 +187,10 @@ $free-palestine-banner-height: 48px;
                     .info {
                         display: flex;
                         align-items: center;
-                        margin-inline-start: 3px;
+                        margin-inline-start: 4px;
 
                         .title {
-                            margin-bottom: 0; // Reset
-                        }
-
-                        .title,
-                        .desc {
-                            font-size: 18px;
-                        }
-
-                        .desc {
-                            font-weight: bold;
-                            margin-inline-start: 4px;
-                            text-transform: uppercase;
+                            font-size: 16px;
                         }
                     }
                 }
