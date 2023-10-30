@@ -1,5 +1,5 @@
 // Import SCSS
-// import '../css/style.scss';
+import '../css/style.scss';
 
 /**
  * [TEMP] Essential Icons
