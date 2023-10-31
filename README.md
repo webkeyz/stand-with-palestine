@@ -2,8 +2,10 @@
 The "Stand with Palestine" library/widget is a sticky bottom banner that you can easily integrate into your website to show your support for Palestine. It features the Palestine flag, a statement, "WE STAND WITH PALESTINE," and dynamic statistics, which include information on martyrs, hospital attacks, destroyed homes, and more, sourced from the Palestinian Ministry of Health. 
 
 ## Usage
-To add the "Stand with Palestine" banner to your website, all you have to do is adding the following script tag to the <head> tag or before the end of the </body> tag on your website:
-`<script src="https://webkeyz.github.io/stand-with-palestine/dist/stand-with-palestine-widget.js"></script>`
+To add the "Stand with Palestine" banner to your website, all you have to do is adding the following script tag to the `<head>` tag or before the end of the `</body>` tag on your website:
+```html
+<script src="https://webkeyz.github.io/stand-with-palestine/dist/stand-with-palestine-widget.js"></script>
+```
 
 ## How it works?
 The "Stand with Palestine" banner is created using SCSS and JavaScript. All styles are converted to CSS, and HTML elements are dynamically created using JavaScript, allowing for seamless integration without the need to modify your website's HTML structure. The library is bundled using `Webpack`, resulting in a single JavaScript file, which is available at `/dist/stand-with-palestine-widget.js`
