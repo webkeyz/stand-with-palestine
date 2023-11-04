@@ -20,8 +20,8 @@ $free-palestine-banner-height: 48px;
     width: 100%;
     height: 56px;
     background: #fff;
+    box-shadow: 0px -7.875px 15.75px 0px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
-    box-shadow: 1px -10px 20px #f2f2f2;
     z-index: 2147483647; // Max. z-index value
 
     /**
@@ -59,7 +59,6 @@ $free-palestine-banner-height: 48px;
      */
     .stats-wrapper {
         display: flex;
-        margin-top: -2px;
         width: 45%;
         max-width: 800px;
         overflow: hidden;
@@ -68,11 +67,12 @@ $free-palestine-banner-height: 48px;
         .stats {
             display: flex;
             align-items: center;
-            animation: palestine-widget-scroll 15s 2s linear infinite;
+            animation: palestine-widget-scroll 25s 2s ease-in-out infinite;
 
             .item {
                 display: flex;
                 align-items: center;
+                width: max-content;
                 margin-inline-end: 32px;
                 color: #C13D44;
 
@@ -126,10 +126,11 @@ $free-palestine-banner-height: 48px;
     .cta-mobile {
         display: none;
         position: absolute;
-        margin-top: -27px; // 19px banner + 8px container padding
+        margin-top: -32px;
         left: 0;
         width: 100%;
-        padding: 2px 42px;
+        height: 24px;
+        line-height: 24px;
         text-align: center;
         font-size: 12px;
         font-family: sans-serif;
@@ -155,7 +156,7 @@ $free-palestine-banner-height: 48px;
             width: 32%;
 
             .stats .item {
-                margin-inline-end: 12px;
+                margin-inline-end: 30px;
 
                 .info {
                     .title {
@@ -189,11 +190,10 @@ $free-palestine-banner-height: 48px;
 
             .stats {
                 width: 750px;
-                animation: palestine-widget-scroll-responsive 15s 2s linear infinite;
+                animation: palestine-widget-scroll-responsive 25s 2s ease-in-out infinite;
 
                 .item {
                     display: flex;
-                    margin-inline-end: 12px;
 
                     .icon {
                         width: 18px;
@@ -230,7 +230,7 @@ $free-palestine-banner-height: 48px;
             }
 
             100% {
-                transform: translateX(-100%);
+                transform: translateX(-140%);
             }
         }
     }
@@ -319,6 +319,6 @@ $free-palestine-banner-height: 48px;
     }
 
     100% {
-        transform: translateX(-60%);
+        transform: translateX(-70%);
     }
 }
