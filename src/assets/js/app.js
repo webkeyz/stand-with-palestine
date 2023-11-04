@@ -83,7 +83,7 @@ cta.className = 'cta';
 cta.innerHTML = `${svgSupportHand} ADD TO YOUR WEBSITE ${svgArrow}`;
 cta.href = repoURL;
 // Open repo in a new tab; Recommended for website's traffic to not override their visit
-cta.target = 'blank'; 
+cta.target = 'blank';
 palestineBannerWrapper.appendChild(cta);
 
 const ctaMobile = document.createElement('a');
@@ -91,12 +91,17 @@ ctaMobile.className = 'cta-mobile';
 ctaMobile.innerHTML = `Show your support and add this to your website ${svgLink}`;
 ctaMobile.href = repoURL;
 // Open repo in a new tab; Recommended for website's traffic to not override their visit
-ctaMobile.target = 'blank'; 
+ctaMobile.target = 'blank';
 palestineBannerWrapper.appendChild(ctaMobile);
 
 
 // Get updated statistics form an external API
-fetch(baseAPIURL + '/stats') // Replace with your API URL
+fetch(baseAPIURL + '/stats', {
+	method: 'GET', // or 'POST' if your endpoint requires
+	headers: {
+		'X-Widget-Origin': window.location.hostname
+	}
+})
 	.then((response) => response.json())
 	.then((data) => {
 		// Update the statsData with the latest data
