@@ -6,6 +6,8 @@ To add the "Stand with Palestine" banner to your website, all you have to do is 
 ```html
 <script src="https://webkeyz.github.io/stand-with-palestine/dist/stand-with-palestine-widget.js"></script>
 ```
+Here's what it looks like ([Live Demo](https://codepen.io/elharony/pen/LYqLGpM)):
+[![Codepen Preview](https://github.com/webkeyz/stand-with-palestine/assets/16986422/dd2369a1-eeda-4e35-a624-690e990e9b61)]([URL_of_Your_CodePen_Project](https://codepen.io/elharony/pen/LYqLGpM))
 
 ## How it works?
 The "Stand with Palestine" banner is created using SCSS and JavaScript. All styles are converted to CSS, and HTML elements are dynamically created using JavaScript, allowing for seamless integration without the need to modify your website's HTML structure. The library is bundled using `Webpack`, resulting in a single JavaScript file, which is available at `/dist/stand-with-palestine-widget.js`
@@ -22,3 +24,4 @@ We welcome contributions to enhance and improve the "Stand with Palestine" libra
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and ensure that the code is well-documented and tested.
 4. Submit a pull request.
+
